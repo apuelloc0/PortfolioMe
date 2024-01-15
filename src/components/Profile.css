@@ -1,0 +1,113 @@
+.Profile {
+
+    width: 100%;
+    height: 82vh;
+    display: flex;
+}
+
+.Profile-Name {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Name {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Name h2 {
+    font-size: 30px;
+    line-height: 0;
+    color: #808080;
+}
+
+.Name h1 {
+    line-height: 0;
+    font-size: 60px;
+    color: #FF004F;
+}
+
+.Icons-container {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.Icons {
+    /* background-color: blueviolet; */
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+svg:hover {
+    color: #FF004F;
+
+}
+
+.Profile-me {
+    width: 50%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    position: relative;
+}
+
+.Profile-me img {
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+@media (max-width: 540px) {
+    .Profile {
+        height: 95vh;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    .Profile-Name {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Profile-Name .Name h2 {
+        font-size: 13px;
+    }
+
+    .Profile-Name .Name h1 {
+        font-size: 35px;
+    }
+
+    .Icons-container .Icons {
+        left: 27%;
+    }
+
+    .Profile-me {
+        width: 100%;
+        height: 40%;
+    }
+
+    .Profile-me img {
+        width: 180px;
+        top: 17%;
+        left: 25%;
+    }
+}

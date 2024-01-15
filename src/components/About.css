@@ -1,0 +1,218 @@
+.About {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.Logos-tech {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logos-tech span {
+    font-size: 18px;
+    width: 80%;
+    color: gray;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.Logos-tech span::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.Logos-tech span:hover::after {
+    width: 20%;
+}
+
+.Logos-tech span:nth-child(1) {
+    margin-top: 20px;
+}
+
+
+.Logos-tech .Logos {
+    height: 18%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Logos-tech .Logos svg {
+    width: 60px;
+    height: 60px;
+}
+
+
+.Logos svg:hover {
+    transform: translateY(-7px);
+}
+
+.AboutMe {
+    width: 50%;
+    height: 100%;
+}
+
+.AboutMe .Text {
+    width: 100%;
+    height: 32%;
+    margin-bottom: 20px;
+}
+
+.AboutMe .Text h2 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.AboutMe .Text p,
+.Education p {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 90%
+}
+
+.AboutMe .Text p {
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+.AboutMe .SEE {
+    width: 81%;
+    height: 12%;
+    display: flex;
+    /* justify-content: s; */
+    align-items: center;
+    /* align-items: center; */
+}
+
+.SEE span {
+    display: block;
+    font-size: 18px;
+    position: relative;
+    padding: 0;
+    margin: 30px;
+    color: gray;
+}
+
+.SEE span::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.SEE span:hover::after {
+    width: 100%;
+}
+
+.AboutMe .Skills-progress {
+    width: 100%;
+    height: 40%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Skills-progress .Skill {
+    display: flex;
+    width: 50%;
+    height: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Skill-bar {
+    width: 175px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.Skill-bar::after {
+    content: "";
+    position: absolute;
+    background-color: #FF004F;
+    transition: ease 0.4s;
+}
+
+.Skill__bar--70::after {
+    transform: translateX(70%);
+}
+
+.Education {
+    width: 100%;
+    height: 60%;
+}
+
+.Education span {
+    font-size: 15px;
+    color: #FF004F;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+@media (max-width: 540px) {
+    .About {
+        min-height: 1000px;
+        flex-direction: column-reverse;
+
+    }
+
+    .Logos-tech {
+        width: 100%;
+        height: 700px;
+    }
+
+    .AboutMe {
+        width: 100%;
+        height: 700px;
+    }
+
+    .AboutMe .Text {
+        margin-bottom: 0;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AboutMe .Text h2 {
+        font-size: 48px;
+    }
+
+    .AboutMe .SEE {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .Education {
+        width: 90%;
+        height: 46%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 14px;
+    }
+}
