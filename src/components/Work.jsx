@@ -18,53 +18,60 @@ const Work = () => {
                 <div className="Work-Proyects">
                     <div className="Proyect">
                         <img src={ecommerce} alt="" />
-                        <div className="layer">
-                            <h3>Ecommerce HTML CSS JS</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://apuelloc0.github.io/Ecommerce/`} target="_blank">                    <FontAwesomeIcon icon={faHtml5} />
-                            </Link>
-                        </div>
+
+                        <Link to={`https://apuelloc0.github.io/Ecommerce/`} target="_blank">
+                            <div className="layer">
+                                <h3>Ecommerce HTML CSS JS</h3>
+                                <p>Aplicacion Web interactiva y dinamica desarrollada con HTML, CSS Y JavaScript</p>
+                            </div>
+                        </Link>
+
                     </div>
 
                     <div className="Proyect">
                         <img src={rickmorty} alt="" />
-                        <div className="layer">
-                            <h3>Landing Asyng Page</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://apuelloc0.github.io/AsyncProyect/`} target="_blank">Icono</Link>
-                        </div>
+                        <Link to={`https://apuelloc0.github.io/AsyncProyect/`} target="_blank">
+                            <div className="layer">
+                                <h3>Asyng Page Rick And Morty</h3>
+                                <p>App que muestra personajes de Rick and Morty mediante peticiones a una API.</p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Proyect">
                         <img src={calculadora} alt="" />
-                        <div className="layer">
-                            <h3>Calculadora</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://apuelloc0.github.io/calculadora/`} target="_blank">Icono</Link>
-                        </div>
+                        <Link to={`https://apuelloc0.github.io/calculadora/`} target="_blank">
+                            <div className="layer">
+                                <h3>Calculadora</h3>
+                                <p>Calculadora basica para realizar operaciones simples.</p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Proyect">
                         <img src={movies} alt="" />
-                        <div className="layer">
-                            <h3>Landing Asyng Page</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://apuelloc0.github.io/AsyncProyect/`} target="_blank">Icono</Link>
-                        </div>
+                        <Link to={`https://apuelloc0.github.io/AsyncProyect/`} target="_blank">
+                            <div className="layer">
+                                <h3>Landing Asyng Page</h3>
+                                <p>App que muestra las Movies favoritas del usuario</p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Proyect">
                         <img src={reactshop} alt="" />
-                        <div className="layer">
-                            <h3>App Movies</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://lucent-cucurucho-607e26.netlify.app/`} target="_blank">Icono</Link>
-                        </div>
+                        <Link to={`https://lucent-cucurucho-607e26.netlify.app/`} target="_blank">
+                            <div className="layer">
+                                <h3>App Movies</h3>
+                                <p>App que ofrece productos basicos, accesorios, tecnología y más </p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Proyect">
                         <img src={plumbers} alt="" />
-                        <div className="layer">
-                            <h3>Landing Page Plumbers</h3>
-                            <p>The app connects you y the talented people around the world.</p>
-                            <Link to={`https://plumbing-service.onrender.com/`} target="_blank">Icono</Link>
-                        </div>
+                        <Link to={`https://plumbing-service.onrender.com/`} target="_blank">
+                            <div className="layer">
+                                <h3>Landing Page Plumbers</h3>
+                                <p>Pagina Web de una empresa de Plomeria de USA</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
